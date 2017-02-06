@@ -23,6 +23,7 @@ class AdminLogin
     public static $signIn             = '.actions .action-primary';
     public static $copyRight          = '.login-footer';
 
+    public static $forgotPasswordMain = '.adminhtml-auth-forgotpassword';
     public static $forgotPasswordText = '.admin__field-info';
     public static $emailAddressTitle  = '.field-email label';
     public static $emailAddress       = '#email';
@@ -55,7 +56,6 @@ class AdminLogin
 
     public function iClickOnForgotYourPassword(\AcceptanceTester $I) {
         $I->click(self::$forgotYourPassword);
-        $I->wait(1);
     }
 
     public function iClickOnSignIn(\AcceptanceTester $I) {
@@ -102,7 +102,7 @@ class AdminLogin
     }
 
     public function iShouldSeeTheForgotYourPasswordFields(\AcceptanceTester $I) {
-        $I->seeElement(self::$mainArea);
+        $I->seeElement(self::$forgotPasswordMain);
         $I->seeElement(self::$logoLink);
         $I->seeElement(self::$logoImage);
         $I->seeElement(self::$title);

@@ -9,6 +9,6 @@ modules:
     enabled:
         - WebDriver:
             url: "http://127.0.0.1:32769"
-            browser: firefox
+            browser: chrome
             window_size: maximize
         - \Helper\Acceptance
