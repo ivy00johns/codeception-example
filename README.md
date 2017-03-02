@@ -20,18 +20,15 @@
     cd [LOCATION_OF_GITHUB_REPO]
     composer install
     ```
-    
-* Next make sure Selenium WebDriver/ChromeDriver are up-to-date using the following command:
-    ```
-    webdriver-manager update
-    ```
-    
-* Next you will need to start a WebDriver server so we can run the tests. Start the server using the following command:
-    ```
-    webdriver-manager start
-    ```
-    
-* Open a New Terminal Window.
+
+* Next you will need to start a Selenium server so we can run the tests.
+
+
+* Then open a New Terminal Window.
 
 
 * Finally to kick off the entire E2E Test Suite run the following command:
+
+    ```
+    codecept
+    ```

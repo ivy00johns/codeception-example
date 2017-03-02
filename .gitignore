@@ -3,7 +3,4 @@
 /composer.lock
 
 tests/_output/*
-.idea/
-.idea/workspace.xml
-
-.idea/codeception-example.iml
+.idea
