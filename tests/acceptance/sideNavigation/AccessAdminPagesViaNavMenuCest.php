@@ -12,6 +12,11 @@ class AccessAdminPagesViaNavMenuCest
     }
 
     // Dashboard Menu Test
+    /**
+     * @env chrome
+     * @env firefox
+     * @group slow
+     */
     public function shouldLandOnTheDashboardPage(AcceptanceTester $I, SideNav $sideNavMenu)
     {
         $I->wantTo('see if I can access the DASHBOARD Page using the Side Nav Menus');
@@ -22,6 +27,11 @@ class AccessAdminPagesViaNavMenuCest
     }
 
     // Sales Menu Tests
+    /**
+     * @env chrome
+     * @env firefox
+     * @group slow
+     */
     public function shouldLandOnEachOfTheSalesPages(AcceptanceTester $I, SideNav $sideNavMenu) {
         $I->wantTo('see if I can access each of the SALES Admin Pages using the Side Nav Menus');
         $sideNavMenu->iClickOnSalesInTheSideNavMenu($I);
@@ -56,6 +66,11 @@ class AccessAdminPagesViaNavMenuCest
     }
 
     // Products Menu Tests
+    /**
+     * @env chrome
+     * @env firefox
+     * @group slow
+     */
     public function shouldLandOnEachOfTheProductsPages(AcceptanceTester $I, SideNav $sideNavMenu) {
         $I->wantTo('see if I can access each of the PRODUCTS Admin Pages using the Side Nav Menus');
         $sideNavMenu->iClickOnProductsInTheSideNavMenu($I);
@@ -70,6 +85,11 @@ class AccessAdminPagesViaNavMenuCest
     }
 
     // Customers Menu Tests
+    /**
+     * @env chrome
+     * @env firefox
+     * @group slow
+     */
     public function shouldLanOnEachOfTheCustomersPages(AcceptanceTester $I, SideNav $sideNavMenu) {
         $I->wantTo('see if I can access each of the CUSTOMERS Admin Pages using the Side Nav Menus');
         $sideNavMenu->iClickOnCustomersInTheSideNavMenu($I);
@@ -84,6 +104,11 @@ class AccessAdminPagesViaNavMenuCest
     }
 
     // Marketing Menu Tests
+    /**
+     * @env chrome
+     * @env firefox
+     * @group slow
+     */
     public function shouldLandOnEachOfTheMarketingPages(AcceptanceTester $I, SideNav $sideNavMenu) {
         $I->wantTo('see if I can access each of the MARKETING Admin Pages using the Side Nav Menus');
         $sideNavMenu->iClickOnMarketingInTheSideNavMenu($I);
@@ -143,6 +168,11 @@ class AccessAdminPagesViaNavMenuCest
     }
 
     // Content Menu Tests
+    /**
+     * @env chrome
+     * @env firefox
+     * @group slow
+     */
     public function shouldLandOnEachOfTheContentPages(AcceptanceTester $I, SideNav $sideNavMenu) {
         $I->wantTo('see if I can access each of the CONTENT Admin Pages using the Side Nav Menus');
         $sideNavMenu->iClickOnContentInTheSideNavMenu($I);
@@ -177,6 +207,11 @@ class AccessAdminPagesViaNavMenuCest
     }
 
     // Reports Menu Tests
+    /**
+     * @env chrome
+     * @env firefox
+     * @group slow
+     */
     public function shouldLandOnEachOfTheReportsPages(AcceptanceTester $I, SideNav $sideNavMenu) {
         $I->wantTo('see if I can access each of the REPORTS Admin Pages using the Side Nav Menu');
         $sideNavMenu->iClickOnReportsInTheSideNavMenu($I);
@@ -296,6 +331,11 @@ class AccessAdminPagesViaNavMenuCest
     }
 
     // Stores Menu Tests
+    /**
+     * @env chrome
+     * @env firefox
+     * @group slow
+     */
     public function shouldLandOnEachOfTheStoresPages(AcceptanceTester $I, SideNav $sideNavMenu) {
         $I->wantTo('see if I can access each of the STORES Admin Pages using the Side Nav Menu');
         $sideNavMenu->iClickOnStoresInTheSideNavMenu($I);
@@ -360,6 +400,11 @@ class AccessAdminPagesViaNavMenuCest
     }
 
     // System Menu Tests
+    /**
+     * @env chrome
+     * @env firefox
+     * @group slow
+     */
     public function shouldLandOnEachOfTheSystemPages(AcceptanceTester $I, SideNav $sideNavMenu) {
         $I->wantTo('see if I can access each of the SYSTEM Admin Pages using the Side Nav Menu');
         $sideNavMenu->iClickOnSystemInTheSideNavMenu($I);
@@ -433,6 +478,11 @@ class AccessAdminPagesViaNavMenuCest
         $I->see('Encryption Key');
     }
 
+    /**
+     * @env chrome
+     * @env firefox
+     * @group slow
+     */
     public function shouldLandOnTheWebSetupWizardPage(AcceptanceTester $I, SideNav $sideNavMenu) {
         $I->wantTo('see if I can access the Web Setup Wizard Admin Page using the Side Nav Menu');
         $sideNavMenu->iClickOnSystemInTheSideNavMenu($I);
@@ -442,6 +492,11 @@ class AccessAdminPagesViaNavMenuCest
         $I->goToTheAdminLogoutPage();
     }
 
+    /**
+     * @env chrome
+     * @env firefox
+     * @group slow
+     */
     public function shouldLandOnThePartnersAndExtensionsPage(AcceptanceTester $I, SideNav $sideNavMenu) {
         $I->wantTo('see if I can access the Partners and Extensions Admin Page using the Side Nav Menu');
         $sideNavMenu->iClickOnFindPartnersAndExtensionsInTheSideNavMenu($I);

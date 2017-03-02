@@ -124,6 +124,481 @@ class AcceptanceTester extends \Codeception\Actor
         return $admin_url_list[$random_admin_url];
     }
 
+    // Sales
+    public function goToTheAdminSalesOrdersPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSalesOrders);
+    }
+
+    public function goToTheAdminSalesInvoicesPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSalesInvoices);
+    }
+
+    public function goToTheAdminSalesShipmentsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSalesShipments);
+    }
+
+    public function goToTheAdminSalesCreditMemosPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSalesCreditMemos);
+    }
+
+    public function goToTheAdminSalesBillingAgreementsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSalesBillingAgreements);
+    }
+
+    public function goToTheAdminSalesTransactionsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSalesTransactions);
+    }
+
+    // Products
+    public function goToTheAdminProductsCatalogPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminProductsCatalog);
+    }
+
+    public function goToTheAdminProductsCategoriesPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminProductsCategories);
+    }
+
+    // Customers
+    public function goToTheAdminCustomersAllCustomersPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminCustomersAllCustomers);
+    }
+
+    public function goToTheAdminCustomersNowOnlinePage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminCustomersNowOnline);
+    }
+
+    // Marketing
+    public function goToTheAdminMarketingCatalogPriceRulePage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminMarketingCatalogPriceRule);
+    }
+
+    public function goToTheAdminMarketingCartPriceRulePage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminMarketingCartPriceRules);
+    }
+
+    public function goToTheAdminMarketingEmailTemplatesPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminMarketingEmailTemplates);
+    }
+
+    public function goToTheAdminMarketingNewsletterTemplatePage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminMarketingNewsletterTemplate);
+    }
+
+    public function goToTheAdminMarketingNewsletterQueuePage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminMarketingNewsletterQueue);
+    }
+
+    public function goToTheAdminMarketingNewsletterSubscribersPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminMarketingNewsletterSubscribers);
+    }
+
+    public function goToTheAdminMarketingURLRewritesPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminMarketingURLRewrites);
+    }
+
+    public function goToTheAdminMarketingSearchTermsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminMarketingSearchTerms);
+    }
+
+    public function goToTheAdminMarketingSearchSynonymsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminMarketingSearchSynonyms);
+    }
+
+    public function goToTheAdminMarketingSiteMapPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminMarketingSiteMap);
+    }
+
+    public function goToTheAdminMarketingReviewsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminMarketingReviews);
+    }
+
+    // Content
+    public function goToTheAdminContentPagesPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminContentPages);
+    }
+
+    public function goToTheAdminContentBlocksPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminContentBlocks);
+    }
+
+    public function goToTheAdminContentWidgetsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminContentWidgets);
+    }
+
+    public function goToTheAdminContentConfigurationPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminContentConfiguration);
+    }
+
+    public function goToTheAdminContentThemesPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminContentThemes);
+    }
+
+    public function goToTheAdminContentSchedulePage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminContentSchedule);
+    }
+
+    // Reports
+    public function goToTheAdminReportsProductsInCartPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsProductsInCart);
+    }
+
+    public function goToTheAdminReportsSearchTermsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsSearchTerms);
+    }
+
+    public function goToTheAdminReportsAbandonedCartsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsAbandonedCArts);
+    }
+
+    public function goToTheAdminReportsNewsletterProblemReportsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsNewsletterProblemReports);
+    }
+
+    public function goToTheAdminReportsByCustomersPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsByCustomers);
+    }
+
+    public function goToTheAdminReportsByProductsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsByProducts);
+    }
+
+    public function goToTheAdminReportsOrdersPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsOrders);
+    }
+
+    public function goToTheAdminReportsTaxPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsTax);
+    }
+
+    public function goToTheAdminReportsInvoicedPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsInvoiced);
+    }
+
+    public function goToTheAdminReportsShippingPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsShipping);
+    }
+
+    public function goToTheAdminReportsRefundsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsRefunds);
+    }
+
+    public function goToTheAdminReportsCouponsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsCoupons);
+    }
+
+    public function goToTheAdminReportsPayPalSettlementPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsPayPalSettlement);
+    }
+
+    public function goToTheAdminReportsBraintreeSettlementPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsBraintreeSettlement);
+    }
+
+    public function goToTheAdminReportsOrderTotalPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsOrderTotal);
+    }
+
+    public function goToTheAdminReportsOrderCountPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsOrderCount);
+    }
+
+    public function goToTheAdminReportsNewPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsNew);
+    }
+
+    public function goToTheAdminReportsViewsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsViews);
+    }
+
+    public function goToTheAdminReportsBestsellersPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsBestsellers);
+    }
+
+    public function goToTheAdminReportsLowStockPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsLowStock);
+    }
+
+    public function goToTheAdminReportsOrderedPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsOrdered);
+    }
+
+    public function goToTheAdminReportsDownloadsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsDownloads);
+    }
+
+    public function goToTheAdminReportRefreshStatisticsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminReportsRefreshStatistics);
+    }
+
+    // Stores
+    public function goToTheAdminStoresAllStoresPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminStoresAllStores);
+    }
+
+    public function goToTheAdminStoresConfigurationPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminStoresConfiguration);
+    }
+
+    public function goToTheAdminStoresTermsAndConditionsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminStoresTermsAndConditions);
+    }
+
+    public function goToTheAdminStoresOrderStatusPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminStoresOrderStatus);
+    }
+
+    public function goToTheAdminStoresTaxRulesPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminStoresTaxRules);
+    }
+
+    public function goToTheAdminStoresTaxZonesAndRatesPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminStoresTaxZonesAndRates);
+    }
+
+    public function goToTheAdminStoresCurrencyRatesPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminStoresCurrencyRates);
+    }
+
+    public function goToTheAdminStoresCurrencySymbolsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminStoresCurrencySymbols);
+    }
+
+    public function goToTheAdminStoresProductPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminStoresProduct);
+    }
+
+    public function goToTheAdminStoresAttributeSetPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminStoresAttributeSet);
+    }
+
+    public function goToTheAdminStoresRatingPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminStoresRating);
+    }
+
+    public function goToTheAdminStoresCustomerGroupsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminStoresCustomerGroups);
+    }
+
+    // System
+    public function goToTheAdminSystemImportPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSystemImport);
+    }
+
+    public function goToTheAdminSystemExportPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSystemExport);
+    }
+
+    public function goToTheAdminSystemImportExportTaxRatesPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSystemImportExportTaxRates);
+    }
+
+    public function goToTheAdminSystemImportHistoryPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSystemImportHistory);
+    }
+
+    public function goToTheAdminSystemIntegrationsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSystemIntegrations);
+    }
+
+    public function goToTheAdminSystemCacheManagementPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSystemCacheManagement);
+    }
+
+    public function goToTheAdminSystemBackupsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSystemBackups);
+    }
+
+    public function goToTheAdminSystemIndexManagementPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSystemIndexManagement);
+    }
+
+    public function goToTheAdminSystemWebSetupWizardPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSystemWebSetupWizard);
+    }
+
+    public function goToTheAdminSystemAllUsersPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSystemAllUsers);
+    }
+
+    public function goToTheAdminSystemLockedUsersPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSystemLockedUsers);
+    }
+
+    public function goToTheAdminSystemUserRolesPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSystemUserRoles);
+    }
+
+    public function goToTheAdminSystemNotificationsPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSystemNotifications);
+    }
+
+    public function goToTheAdminSystemCustomVariablesPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSystemCustomVariables);
+    }
+
+    public function goToTheAdminSystemManageEncryptionKeyPage()
+    {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminSystemManageEncryptionKey);
+    }
+
+    public function goToTheAdminFindPartnersAndExtensionsPage() {
+        $I = $this;
+        $I->amOnPage(\Page\Acceptance\AdminURLList::$adminFindPartnersAndExtensions);
+    }
+
     public function shouldBeOnTheAdminLoginPage() {
         $I = $this;
         $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminLogin);

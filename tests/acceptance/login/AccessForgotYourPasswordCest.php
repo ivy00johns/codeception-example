@@ -9,15 +9,25 @@ class AccessForgotYourPasswordCest
         $I->goToTheAdminLoginPage();
     }
 
+    /**
+     * @env chrome
+     * @env firefox
+     * @env phantom
+     */
     public function shouldLandOnTheForgotYourPasswordPage(AcceptanceTester $I, AdminLogin $adminLogin)
     {
         $I->wantTo('see if I can access the Forgot Your Password page');
         $adminLogin->iClickOnForgotYourPassword($I);
         $I->shouldBeOnTheForgotYourPasswordPage();
-        $I->see('Password Help');
         $adminLogin->iShouldSeeTheForgotYourPasswordFields($I);
+        $I->see('Password Help');
     }
 
+    /**
+     * @env chrome
+     * @env firefox
+     * @env phantom
+     */
     public function shouldLandOnTheLoginPageWhenBackToSignInIsClicked(AcceptanceTester $I, AdminLogin $adminLogin)
     {
         $I->wantTo('see if I can access the Login page from the Forgot Your Password page');
@@ -26,6 +36,11 @@ class AccessForgotYourPasswordCest
         $I->shouldBeOnTheAdminLoginPage();
     }
 
+    /**
+     * @env chrome
+     * @env firefox
+     * @env phantom
+     */
     public function shouldLandOnTheLoginPageWhenTheLogoIsClicked(AcceptanceTester $I, AdminLogin $adminLogin)
     {
         $I->wantTo('see if I can access the Login page by clicking on the Logo');

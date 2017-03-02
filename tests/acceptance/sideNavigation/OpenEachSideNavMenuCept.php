@@ -1,6 +1,9 @@
 <?php
 use Page\Acceptance\SideNavigation as SideNav;
 
+// @env firefox
+// @env chrome
+// @group slow
 $I = new AcceptanceTester($scenario);
 $sideNavMenu = new SideNav($I);
 
