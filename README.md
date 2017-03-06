@@ -30,5 +30,5 @@
 * Finally to kick off the entire E2E Test Suite run the following command:
 
     ```
-    codecept
+    codecept run --env chrome
     ```

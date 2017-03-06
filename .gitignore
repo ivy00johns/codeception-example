@@ -3,4 +3,5 @@
 /composer.lock
 
 tests/_output/*
+tests/_support/*
 .idea
