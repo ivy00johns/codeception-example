@@ -1091,11 +1091,26 @@ class AcceptanceTester extends \Codeception\Actor
     }
 
     // Login Helpers
+    public function closeAdminNotification() {
+        $I = $this;
+
+        try {
+            $I->see('.modal-popup h1 + .action-close');
+            // Continue to do this if it's present
+
+        } catch (Exception $e) {
+            // Do this if it's not present.
+            $I->click('.modal-popup h1 + .action-close');
+            $I->wait(1);
+        }
+    }
+
     public function loginAsTheFollowingAdmin($username, $password) {
         $I = $this;
         $I->fillField('login[username]', $username);
         $I->fillField('login[password]', $password);
         $I->click('Sign in');
+        $I->closeAdminNotification();
     }
 
     public function loginAsAnExistingAdmin() {
@@ -1103,5 +1118,6 @@ class AcceptanceTester extends \Codeception\Actor
         $I->fillField('login[username]', 'admin');
         $I->fillField('login[password]', 'admin123');
         $I->click('Sign in');
+        $I->closeAdminNotification();
     }
 }
